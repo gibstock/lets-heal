@@ -16,6 +16,10 @@ const codeBtn = document.querySelector('#code-submit');
 
 let codeArray = ['746374', '948374', '930384', '991711', '938373','99843','988444', '017151', '243794', '726222', '009909'];
 
+let mantras = [
+    'Let the light in', 'give the last bite away', 'stop and pay close attention', 'say HELLO today', 'Be here NOW'
+]
+
 let date = new Date();
 let month = date.getMonth() + 1;
 let day = date.getDate();
@@ -54,9 +58,13 @@ function checkForm(form){
     form.subBtn.disabled = true;
     return true;
 }
+function mantraPicker(){
+    mantra.innerHTML = mantras[Math.floor(Math.random()*mantras.length)];
+}
 function codeCheck(){
     if(codeArray.includes(code.value)){
         mantra.style.display = 'flex';
+        mantraPicker();
     }else{
         alert('Please enter your email to receive a valid code. If you have and this is an error, please contact our support team.');
     }
