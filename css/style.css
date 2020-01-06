@@ -253,6 +253,26 @@ footer{
 }
 .foot1{
     display: flex;
-    align-self: center;
-    justify-self: center;
+    align-items: center;
+    justify-content: center;
+    background: #67A0A3;
+}
+.foot1 img{
+    max-width: 100%;
+    width: 30%;
+}
+.foot2 ul{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.foot2 ul li{
+    list-style: none;
+}
+.foot2 ul li a{
+    text-decoration: none;
+}
+.foot2 ul li a:hover{
+    cursor: pointer;
 }
