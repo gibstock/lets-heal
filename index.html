@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Allerta+Stencil|Marmelad&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/style.css">
+    <title>Let's Heal</title>
+</head>
+<body>
+    <div class="nav-wrapper">
+        <div class="logo">LET'S<br>HEAL</div>
+        <div class="hamburger"></div>
+        <nav>
+            <ul>
+                <a id="exercises" href="#_"><li>Exercises</li></a>
+                <a id="teas" href="#_"><li>Teas</li></a>
+                <a id="meditation" href="#_"><li>Meditation</li></a>
+                <a id="rituals" href="#_"><li>Rituals</li></a>
+            </ul>
+        </nav>
+    </div>
+    <main>
+        <hr class="hr3">
+        <hr class="hr2">
+        <hr class="hr1">
+        <div class="offerings">
+            <h2>offerings</h2>
+        </div>
+        <div class="main-grid">
+            <a href="#_"><img src="/img/herbs.jpg" alt=""><p>Herbs</p></a>
+            <a href="#_"><img src="/img/lavender.jpg" alt=""><p>Rituals</p></a>
+            <a href="#_"><img src="/img/meditation.jpg" alt=""><p>Elixr</p></a>
+            <a href="#_"><img src="/img/silhouette.jpg" alt=""><p>Meditate</p></a>
+            <a href="#_"><img src="/img/healing.jpg" alt=""><p>Affirmations</p></a>
+            <a href="#_"><img src="/img/washing.jpg" alt=""><p>Daily</p></a>
+            <a href="#_"><img src="/img/tea.jpg" alt=""><p>Teas</p></a>
+            <a href="#_"><img src="/img/crystal.jpg" alt=""><p>Crystals</p></a>
+            <a href="#_"><img src="/img/stones.jpg" alt=""><p>Gemstones</p></a>
+        </div>
+        <hr class="hr1">
+        <hr class="hr2">
+        <hr class="hr4">
+    </main>
+    <div class="title">
+        <h2>Begin the Healing</h2>
+   </div>
+    <div class="heal-btn"><a href="#"> HEAL</a></div>
+    <div class="daily">
+        <h2>Daily Offering</h2>
+        <img src="/img/statue.jpg" alt="statue">
+    </div>
+    <div class="daily-color">
+        <h2>Free Daily Color Picker</h2>
+        <p>There are signs all around us guiding us along our path if you know where to look.</p><br>
+        <p>One simple tool is setting an intention to a color and following that color when you encounter it.</p><br>
+        <p>Use our free color picker to find yours for the day. </p><br>
+        <form action="javascript:void(0);" onsubmit="return checkForm(this);">
+            <label for="birthday">Enter your birth-date to receive your color for <span id="today"></span></label><br>
+            <h6>(We do not save this data)</h6><br>
+            <input type="date" name="color" id="birthday" required>
+            <input type="submit" value="SUBMIT" id="button" name="subBtn">
+        </form>
+        <br>
+        <div class="color">
+            <div class="daily-mantra">Open The Door</div>
+        </div>
+        <div class="message"><p>We recommend taking a screenshot of the color to take it with you on your journey today.</p></div>
+        <div class="mantra">
+            <h3>Daily Mantra</h3>
+            <p>Enter your email to receive a Mantra to go with your color.</p><br>
+            <form name="mantra-email" action="POST" data-netlify="true">
+                <input type="text" name="name" id="name" placeholder="name" required>
+                <input type="email" name="email" id="email" placeholder="email" required>
+                <input type="submit" value="SUBMIT" id="email-submit">
+            </form>
+                <p>or</p>
+            <form action="javascript:void(0);" onsubmit="return checkForm2(this)">
+                <input type="text" name="code" id="code" placeholder="personal code">
+                <input type="submit" value="SUBMIT" id="code-submit" name="codeSubmit">
+            </form>
+            <p>Keep this in your mind throughout your day to get the full effect of following your path.</p><br>
+            <p>You'll receive a code in your email to use so you can come back daily for your personal color and mantra.</p>
+        </div>
+        
+    </div> 
+    <script src="/js/script.js"></script>
+</body>
+</html>
