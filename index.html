@@ -52,27 +52,17 @@
         <img src="/img/statue.jpg" alt="statue">
     </div>
     <div class="daily-color">
-        <h2>Free Daily Color Picker</h2>
+        <h2>Free Daily Color and Mantra Intention Tool</h2>
         <p>There are signs all around us guiding us along our path if you know where to look.</p><br>
-        <p>One simple tool is setting an intention to a color and following that color when you encounter it.</p><br>
-        <p>Use our free color picker to find yours for the day. </p><br>
-        <form action="javascript:void(0);" onsubmit="return checkForm(this);">
-            <label>Enter your birth-date to receive your color for <span id="today"></span></label><br>
-            <h6>(We do not save this data)</h6><br>
-            <label for="birthday">Birth Date</label><input type="date" name="color" id="birthday" required><br>
-            
-            <input type="submit" value="SUBMIT" id="button" name="subBtn">
-        </form>
-        <br>
-        <p>Or scroll down to get a color and a mantra.</p>
-        <div class="color">
-            <div class="daily-mantra">Open The Door</div>
-        </div>
-        <div class="message"><p>We recommend taking a screenshot of the color to take it with you on your journey today.</p></div>
+        <p>One simple tool is setting an intention to a color paired with a mantra and following that color when you encounter it out in the world.</p><br>
+        <p>The mantra will help guide you along your color path.</p><br>
+        <p>Register to user our Free Daily Color and Mantra Intention Tool</p><br>
+        <p>You'll receive a code in your email that you can use daily for your personal color and mantra.</p><br>
+        <!-- registration  -->
         <div class="mantra">
             <h3>Daily Mantra with your Color</h3>
             <p>Enter your Birth Date, Name and email to receive a special Mantra paired with a new color.</p><br>
-            <p>You'll receive a code in your email that you can use daily for your personal color and mantra.</p><br>
+            
             <form name="mantra-email" action="POST" data-netlify="true">
                 <input type="date" name="color" id="birthdayReg" placeholder="birthdate" required><br>
                 <input type="text" name="name" id="name" placeholder="name" required>
@@ -84,10 +74,21 @@
                 <input type="text" name="code" id="code" placeholder="personal code">
                 <input type="submit" value="SUBMIT" id="code-submit" name="codeSubmit" href="#button">
             </form><br>
-            
-            <p>Keep this in your mind throughout your day to get the full effect of following your path.</p><br>
-            
         </div>
+        <p>Or</p><br>
+        <p>If you'd prefer not to register you can still use our free color tool without the mantra by entering just your Birth Date</p><br>
+        <form action="javascript:void(0);" onsubmit="return checkForm(this);">
+            <label>Enter your birth-date to receive your color for <span id="today"></span></label><br>
+            <h6>(We do not save this data)</h6><br>
+            <label for="birthday">Birth Date</label><input type="date" name="color" id="birthday" required><br>
+            
+            <input type="submit" value="SUBMIT" id="button" name="subBtn">
+        </form>
+        <br>
+        <div class="color">
+            <div class="daily-mantra">Open The Door</div>
+        </div>
+        <div class="message"><p>We recommend taking a screenshot of the color and mantra to take with you so you can keep this in your mind throughout your day in order to get the full effect of following your path.</p></div>
         <br>
         
     </div> 

@@ -1,3 +1,4 @@
+
 const hamMenu = document.querySelector('.hamburger');
 const navWrapper = document.querySelector('.nav-wrapper');
 const nav = navWrapper.querySelector('nav');
@@ -52,6 +53,7 @@ function randomizer() {
     if(bday.value !== ""){
         var r1 = Math.floor(Math.random() *(999999 - 100000)) + 100000;
     color.style.background = "#" + r1;
+    color.scrollIntoView();
     }else{
         return;
     }

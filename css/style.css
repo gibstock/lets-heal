@@ -186,6 +186,9 @@ main{
     border-radius: 12px;
     padding: 1em;
 }
+.daily-color h2{
+    text-align: center;
+}
 form{
     display: grid;
     grid-template-columns: 1fr;
