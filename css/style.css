@@ -222,6 +222,7 @@ form{
     align-items: center;
     text-shadow: 0px 15px 1px #fff;
 }
+.mantra form #email-submit,
 .mantra form #code-submit{
     margin: 1em 0;
     width: 51%;
@@ -231,6 +232,9 @@ form{
     background: #67A0A3;
     border-radius: 0 0 12px 12px;
     box-shadow: -7px -7px 25px 0 #fff, 7px 7px 25px 0 #000;
+}
+.mantra p{
+    justify-self: center;
 }
 .message{
     color: #A38068;
