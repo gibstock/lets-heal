@@ -61,6 +61,7 @@ function randomizer() {
 function randomizer2() {
         var r1 = Math.floor(Math.random() *(999999 - 100000)) + 100000;
     color.style.background = "#" + r1;
+    color.scrollIntoView();
 }
 function checkForm(form){
     form.subBtn.disabled = true;
