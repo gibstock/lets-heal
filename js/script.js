@@ -60,6 +60,7 @@ function checkForm(form){
 }
 function mantraPicker(){
     mantra.innerHTML = mantras[Math.floor(Math.random()*mantras.length)];
+    console.log(mantra.innerHTML = mantras[Math.floor(Math.random()*mantras.length)]);
 }
 function codeCheck(){
     if(codeArray.includes(code.value)){
