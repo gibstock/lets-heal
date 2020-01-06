@@ -12,6 +12,10 @@ const bday = document.querySelector('#birthday');
 const code = document.querySelector('#code');
 const mantra = document.querySelector('.daily-mantra');
 const codeBtn = document.querySelector('#code-submit');
+const emailSubmit = document.querySelector('#email-submit');
+const birthdayReg = document.querySelector('#birthdayReg');
+const name = document.querySelector('#name');
+const email = document.querySelector('#email');
 
 
 let codeArray = ['746374', '948374', '930384', '991711', '938373','99843','988444', '017151', '243794', '726222', '009909'];
@@ -54,6 +58,10 @@ function randomizer() {
     
     
 }
+function randomizer2() {
+        var r1 = Math.floor(Math.random() *(999999 - 100000)) + 100000;
+    color.style.background = "#" + r1;
+}
 function checkForm(form){
     form.subBtn.disabled = true;
     return true;
@@ -64,12 +72,13 @@ function checkForm2(form){
 }
 function mantraPicker(){
     mantra.innerHTML = mantras[Math.floor(Math.random()*mantras.length)];
-    console.log(mantras[Math.floor(Math.random()*mantras.length)]);
+    randomizer2();
 }
 function codeCheck(){
     if(codeArray.includes(code.value)){
         mantra.style.display = 'flex';
         mantraPicker();
+
     }else{
         alert('Please enter your email to receive a valid code. If you have and this is an error, please contact our support team.');
     }
@@ -80,3 +89,4 @@ hamMenu.addEventListener('click', openMenu);
 off.addEventListener('click', offMenu);
 btn.addEventListener('click', randomizer);
 codeBtn.addEventListener('click', codeCheck);
+// emailSubmit.addEventListener('click', randomizer2 )

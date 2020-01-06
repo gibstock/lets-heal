@@ -64,10 +64,16 @@
             <input type="submit" value="SUBMIT" id="button" name="subBtn">
         </form>
         <br>
+        <p>Or scroll down to get a color and a mantra.</p>
+        <div class="color">
+            <div class="daily-mantra">Open The Door</div>
+        </div>
+        <div class="message"><p>We recommend taking a screenshot of the color to take it with you on your journey today.</p></div>
         <div class="mantra">
-            <h3>Daily Mantra</h3>
-            <p>Enter your email to receive a Mantra to go with your color.</p><br>
+            <h3>Daily Mantra with your Color</h3>
+            <p>Enter your Birth Date, Name and email to receive a special Mantra paired with a new color.</p><br>
             <form name="mantra-email" action="POST" data-netlify="true">
+                <input type="date" name="color" id="birthdayReg" required><br>
                 <input type="text" name="name" id="name" placeholder="name" required>
                 <input type="email" name="email" id="email" placeholder="email" required>
                 <input type="submit" value="SUBMIT" id="email-submit">
@@ -81,11 +87,6 @@
             <p>You'll receive a code in your email to use so you can come back daily for your personal color and mantra.</p>
         </div>
         <br>
-        <div class="color">
-            <div class="daily-mantra">Open The Door</div>
-        </div>
-        <div class="message"><p>We recommend taking a screenshot of the color to take it with you on your journey today.</p></div>
-        
         
     </div> 
     <script src="/js/script.js"></script>
