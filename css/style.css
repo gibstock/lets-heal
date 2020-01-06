@@ -189,6 +189,9 @@ main{
 .daily-color h2{
     text-align: center;
 }
+#personal-code{
+    text-align: center;
+}
 form{
     display: grid;
     grid-template-columns: 1fr;
