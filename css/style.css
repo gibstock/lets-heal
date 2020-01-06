@@ -284,3 +284,14 @@ footer{
 .foot2 ul li a:hover{
     cursor: pointer;
 }
+.success{
+    background: #67A0A3;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.success h1{
+    font-size: 2.5em;
+    color: #000;
+}
