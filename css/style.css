@@ -275,6 +275,7 @@ footer{
 }
 .foot2 ul li a{
     text-decoration: none;
+    color: #E6EDED;
 }
 .foot2 ul li a:hover{
     cursor: pointer;
