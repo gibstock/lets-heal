@@ -27,6 +27,7 @@ body{
     justify-self: flex-end;
     align-self: center;
     margin: 1em;
+    z-index: 99;
 }
 .hamburger::before,
 .hamburger::after{
@@ -244,4 +245,14 @@ form{
 }
 .message{
     color: #A38068;
+}
+footer{
+    display: grid;
+    grid-template-columns: 1fr;
+    
+}
+.foot1{
+    display: flex;
+    align-self: center;
+    justify-self: center;
 }
