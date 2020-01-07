@@ -27,7 +27,6 @@ body{
     justify-self: flex-end;
     align-self: center;
     margin: 1em;
-    z-index: 99;
 }
 .hamburger::before,
 .hamburger::after{
@@ -70,6 +69,7 @@ nav{
     top: 15vh;
     opacity: 0;
     transition: opacity .5s;
+    z-index: 99;
 }
 #exercises{
     background: #A38068;
