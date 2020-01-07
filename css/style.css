@@ -308,7 +308,7 @@ footer{
         display: none;
     }
     .desk-logo{
-        display: inherit;
+        display: flex;
     }
     .hamburger{
         display: none;
@@ -318,8 +318,9 @@ footer{
         flex-direction: row;
         justify-content: space-around;
         align-items: center;
-        background: #67A0A3;
         height: 10vh;
+        border-top: 1px solid black;
+        border-bottom: 1px solid black;
     }
     .desk-nav ul li{
         font-size: 1.2em;
