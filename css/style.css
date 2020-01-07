@@ -312,11 +312,11 @@ footer{
         justify-content: space-around;
         align-items: center;
         background: #67A0A3;
-        height: 15vh;
+        height: 10vh;
     }
     .desk-nav ul li{
         font-size: 1.2em;
-
+        list-style: none;
     }
     .desk-nav ul li a{
         text-decoration: none;
