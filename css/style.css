@@ -295,8 +295,14 @@ footer{
     font-size: 2.5em;
     color: #000;
 }
+.desk-logo{
+    display: none;
+}
 /* media queries  */
 @media screen and (min-width: 768px){
+    .logo{
+        display: none;
+    }
     .hamburger{
         display: none;
     }
@@ -306,6 +312,7 @@ footer{
         justify-content: space-around;
         align-items: center;
         background: #67A0A3;
+        height: 15vh;
     }
     .desk-nav ul li{
         font-size: 1.2em;
