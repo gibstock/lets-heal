@@ -309,12 +309,14 @@ footer{
     }
     .desk-logo{
         display: flex;
+        align-self: center;
     }
     .hamburger{
         display: none;
     }
     .desk-nav{
         display: flex;
+        align-items: center;
     }
     .desk-nav ul{
         display: flex;
@@ -324,6 +326,7 @@ footer{
         height: 10vh;
         border-top: 1px solid black;
         border-bottom: 1px solid black;
+        width: 99%;
     }
     .desk-nav ul li{
         font-size: 1.2em;
@@ -331,6 +334,6 @@ footer{
     }
     .desk-nav ul li a{
         text-decoration: none;
-        color: #E6EDED;
+        color: #A38068;
     }
 }
