@@ -15,6 +15,7 @@ body{
     grid-template-columns: 1fr 9fr;
 }
 .logo{
+    display: inherit;
     justify-self: center;
     align-self: center;
     margin: 1em;
@@ -298,10 +299,16 @@ footer{
 .desk-logo{
     display: none;
 }
+.desk-nav{
+    display: none;
+}
 /* media queries  */
 @media screen and (min-width: 768px){
     .logo{
         display: none;
+    }
+    .desk-logo{
+        display: inherit;
     }
     .hamburger{
         display: none;
