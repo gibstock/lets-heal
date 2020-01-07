@@ -41,76 +41,79 @@
             </ul>
         </div>
     </div>
-    <main>
-        <hr class="hr3">
-        <hr class="hr2">
-        <hr class="hr1">
-        <div class="offerings">
-            <h2>offerings</h2>
+    <div class="main-grid-box">
+        <main>
+            <hr class="hr3">
+            <hr class="hr2">
+            <hr class="hr1">
+            <div class="offerings">
+                <h2>offerings</h2>
+            </div>
+            <div class="main-grid">
+                <a href="#_"><img src="/img/herbs.jpg" alt=""><p>Herbs</p></a>
+                <a href="#_"><img src="/img/lavender.jpg" alt=""><p>Rituals</p></a>
+                <a href="#_"><img src="/img/meditation.jpg" alt=""><p>Elixr</p></a>
+                <a href="#_"><img src="/img/silhouette.jpg" alt=""><p>Meditate</p></a>
+                <a href="#_"><img src="/img/healing.jpg" alt=""><p>Affirmations</p></a>
+                <a href="#_"><img src="/img/washing.jpg" alt=""><p>Daily</p></a>
+                <a href="#_"><img src="/img/tea.jpg" alt=""><p>Teas</p></a>
+                <a href="#_"><img src="/img/crystal.jpg" alt=""><p>Crystals</p></a>
+                <a href="#_"><img src="/img/stones.jpg" alt=""><p>Gemstones</p></a>
+            </div>
+            <hr class="hr1">
+            <hr class="hr2">
+            <hr class="hr4">
+        </main>
+        <div class="title">
+            <h2>Begin the Healing</h2>
+       </div>
+        <div class="heal-btn"><a href="#"> HEAL</a></div>
+        <div class="daily">
+            <h2>Daily Offering</h2>
+            <img src="/img/statue.jpg" alt="statue">
         </div>
-        <div class="main-grid">
-            <a href="#_"><img src="/img/herbs.jpg" alt=""><p>Herbs</p></a>
-            <a href="#_"><img src="/img/lavender.jpg" alt=""><p>Rituals</p></a>
-            <a href="#_"><img src="/img/meditation.jpg" alt=""><p>Elixr</p></a>
-            <a href="#_"><img src="/img/silhouette.jpg" alt=""><p>Meditate</p></a>
-            <a href="#_"><img src="/img/healing.jpg" alt=""><p>Affirmations</p></a>
-            <a href="#_"><img src="/img/washing.jpg" alt=""><p>Daily</p></a>
-            <a href="#_"><img src="/img/tea.jpg" alt=""><p>Teas</p></a>
-            <a href="#_"><img src="/img/crystal.jpg" alt=""><p>Crystals</p></a>
-            <a href="#_"><img src="/img/stones.jpg" alt=""><p>Gemstones</p></a>
-        </div>
-        <hr class="hr1">
-        <hr class="hr2">
-        <hr class="hr4">
-    </main>
-    <div class="title">
-        <h2>Begin the Healing</h2>
-   </div>
-    <div class="heal-btn"><a href="#"> HEAL</a></div>
-    <div class="daily">
-        <h2>Daily Offering</h2>
-        <img src="/img/statue.jpg" alt="statue">
-    </div>
-    <div class="daily-color">
-        <h2>Free Daily Color and Mantra Intention Tool</h2>
-        <p>There are signs all around us guiding us along our path if you know where to look.</p><br>
-        <p>One simple tool is setting an intention to a color paired with a mantra and following that color when you encounter it out in the world.</p><br>
-        <p>The mantra will help guide you along your color path.</p><br>
-        <p>Register to user our Free Daily Color and Mantra Intention Tool</p><br>
-        <p>You'll receive a code in your email that you can use daily for your personal color and mantra.</p><br>
-        <!-- registration  -->
-        <div class="mantra">
-            
-            
-            <form name="mantra-email" action="/success/" method="POST" data-netlify="true">
-                <input type="date" name="Birth Date" id="birthdayReg" placeholder="birthdate" required><br>
-                <input type="text" name="Name" id="name" placeholder="name" required>
-                <input type="email" name="Email" id="email" placeholder="email" required>
-                <input type="submit" value="SUBMIT" id="email-submit">
+        <div class="daily-color">
+            <h2>Free Daily Color and Mantra Intention Tool</h2>
+            <p>There are signs all around us guiding us along our path if you know where to look.</p><br>
+            <p>One simple tool is setting an intention to a color paired with a mantra and following that color when you encounter it out in the world.</p><br>
+            <p>The mantra will help guide you along your color path.</p><br>
+            <p>Register to user our Free Daily Color and Mantra Intention Tool</p><br>
+            <p>You'll receive a code in your email that you can use daily for your personal color and mantra.</p><br>
+            <!-- registration  -->
+            <div class="mantra">
+                
+                
+                <form name="mantra-email" action="/success/" method="POST" data-netlify="true">
+                    <input type="date" name="Birth Date" id="birthdayReg" placeholder="birthdate" required><br>
+                    <input type="text" name="Name" id="name" placeholder="name" required>
+                    <input type="email" name="Email" id="email" placeholder="email" required>
+                    <input type="submit" value="SUBMIT" id="email-submit">
+                </form>
+                    <p id="personal-code">If you already have your personal code enter it here:</p>
+                <form action="javascript:void(0);" onsubmit="return checkForm2(this)">
+                    <input type="text" name="code" id="code" placeholder="personal code">
+                    <input type="submit" value="SUBMIT" id="code-submit" name="codeSubmit" href="#button">
+                </form><br>
+            </div>
+            <p style="text-align: center;">Or</p><br>
+            <p>If you'd prefer not to register you can still use our free color tool without the mantra by entering just your Birth Date</p><br>
+            <form action="javascript:void(0);" onsubmit="return checkForm(this);">
+                <label>Enter your birth-date to receive your color for <span id="today"></span></label><br>
+                <h6>(We do not save this data)</h6><br>
+                <label for="birthday" style="text-align: center;">Birth Date</label><input type="date" name="color" id="birthday" required><br>
+                
+                <input type="submit" value="SUBMIT" id="button" name="subBtn">
             </form>
-                <p id="personal-code">If you already have your personal code enter it here:</p>
-            <form action="javascript:void(0);" onsubmit="return checkForm2(this)">
-                <input type="text" name="code" id="code" placeholder="personal code">
-                <input type="submit" value="SUBMIT" id="code-submit" name="codeSubmit" href="#button">
-            </form><br>
-        </div>
-        <p style="text-align: center;">Or</p><br>
-        <p>If you'd prefer not to register you can still use our free color tool without the mantra by entering just your Birth Date</p><br>
-        <form action="javascript:void(0);" onsubmit="return checkForm(this);">
-            <label>Enter your birth-date to receive your color for <span id="today"></span></label><br>
-            <h6>(We do not save this data)</h6><br>
-            <label for="birthday" style="text-align: center;">Birth Date</label><input type="date" name="color" id="birthday" required><br>
+            <br>
+            <div class="color" >
+                <div class="daily-mantra">Open The Door</div>
+            </div>
+            <div class="message"><p>We recommend taking a screenshot of the color and mantra to take with you so you can keep this in your mind throughout your day in order to get the full effect of following your path.</p></div>
+            <br>
             
-            <input type="submit" value="SUBMIT" id="button" name="subBtn">
-        </form>
-        <br>
-        <div class="color" >
-            <div class="daily-mantra">Open The Door</div>
-        </div>
-        <div class="message"><p>We recommend taking a screenshot of the color and mantra to take with you so you can keep this in your mind throughout your day in order to get the full effect of following your path.</p></div>
-        <br>
-        
-    </div> 
+        </div> 
+    </div>
+    
     <footer>
         <div class="foot1">
             <img src="/img/footer-logo.png" alt="footer">

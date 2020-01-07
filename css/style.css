@@ -6,6 +6,11 @@
 body{
     font-family: 'Marmelad', sans-serif;
 }
+.main-grid-box{
+    display: grid;
+    grid-template-columns: 2fr 3fr 3fr 2fr;
+
+}
 .nav-wrapper{
     position: relative;
     height: 15vh;
@@ -86,6 +91,13 @@ nav{
 }
 main{
     margin: 1em;
+    grid-column: 2/4;
+}
+.title{
+    grid-column: 2/4;
+}
+.heal-btn{
+    display: none;
 }
 .offerings{
     display: flex;
@@ -154,6 +166,7 @@ main{
     display: flex;
     justify-content: center;
     align-items: center;
+    grid-column: 2/4;
 }
 .heal-btn > a{
     font-family: 'Allerta Stencil', sans-serif;
@@ -170,6 +183,7 @@ main{
     justify-content: center;
     align-items: center;
     padding: 0 2em;
+    grid-column: 2/4;
 }
 .daily h2{
     position: absolute;
