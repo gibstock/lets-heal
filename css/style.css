@@ -201,6 +201,7 @@ main{
     background: #FFAB73;
     border-radius: 12px;
     padding: 1em;
+    grid-column: 2/4;
 }
 .daily-color h2{
     text-align: center;
@@ -349,5 +350,8 @@ footer{
     .desk-nav ul li a{
         text-decoration: none;
         color: #A38068;
+    }
+    .foot1 img{
+        width: 15%;
     }
 }
