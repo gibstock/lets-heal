@@ -6,11 +6,7 @@
 body{
     font-family: 'Marmelad', sans-serif;
 }
-.main-grid-box{
-    display: grid;
-    grid-template-columns: 2fr 3fr 3fr 2fr;
 
-}
 .nav-wrapper{
     position: relative;
     height: 15vh;
@@ -319,6 +315,11 @@ footer{
 }
 /* media queries  */
 @media screen and (min-width: 768px){
+    .main-grid-box{
+        display: grid;
+        grid-template-columns: 2fr 3fr 3fr 2fr;
+    
+    }
     .logo{
         display: none;
     }
