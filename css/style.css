@@ -29,6 +29,7 @@ body{
     justify-self: flex-end;
     align-self: center;
     margin: 1em;
+    display: none;
 }
 .hamburger::before,
 .hamburger::after{
@@ -88,6 +89,7 @@ nav{
 main{
     margin: 1em;
     grid-column: 2/4;
+    display: none;
 }
 .title{
     grid-column: 2/4;
@@ -159,7 +161,8 @@ main{
 }
 .heal-btn{
     margin: 1em;
-    display: flex;
+    display: none;
+    /* display: flex; */
     justify-content: center;
     align-items: center;
     grid-column: 2/4;
@@ -274,6 +277,11 @@ footer{
     max-width: 100%;
     width: 30%;
 }
+.foot1 a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .foot1 a img{
     width: 50%;
 }
@@ -315,6 +323,9 @@ footer{
 }
 /* media queries  */
 @media screen and (min-width: 768px){
+    .title{
+        font-size: 3.5em;
+    }
     .main-grid-box{
         display: grid;
         grid-template-columns: 2fr 3fr 3fr 2fr;
@@ -331,7 +342,8 @@ footer{
         display: none;
     }
     .desk-nav{
-        display: flex;
+        display: none;
+        /* display: flex; */
         align-items: center;
     }
     .desk-nav ul{
