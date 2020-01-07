@@ -313,6 +313,9 @@ footer{
     .hamburger{
         display: none;
     }
+    .desk-nav{
+        display: flex;
+    }
     .desk-nav ul{
         display: flex;
         flex-direction: row;
