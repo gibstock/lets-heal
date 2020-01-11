@@ -23,7 +23,34 @@ body{
     border: 1px solid #444;
 }
 .news-popup{
+    position: absolute;
+    top: 50vh;
+    left: 50vw;
+    background: rgba(238, 238, 238, 0.63);
+    width: 400px;
+    height: 200px;
     display: none;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    border: 2px solid #fff;
+    transform: translateX(-50%) translateY(-50%);
+}
+.news-popup h3{
+    background: #fff;
+    padding: 1em;
+    width: 80%;
+    text-align: center;
+}
+.news-popup form{
+    width: 80%;
+}
+.news-popup form input{
+    border-radius: 12px;
+    border: none;
+    background: #fff;
+    margin: .2em;
+
 }
 .hamburger{
     position: relative;

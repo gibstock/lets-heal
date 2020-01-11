@@ -161,6 +161,7 @@ function codeCheck(){
 function signUp(){
     if(newsLetterPopup.style.display !== 'flex'){
         newsLetterPopup.style.display = 'flex';
+        window.scrollTo(0,0);
     }else if(newsLetterPopup.style.display === 'flex'){
         newsLetterPopup.style.display = 'none';
     }
