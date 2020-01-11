@@ -1,22 +1,32 @@
 
+const logo = document.querySelector('.logo');
 const hamMenu = document.querySelector('.hamburger');
 const navWrapper = document.querySelector('.nav-wrapper');
 const nav = navWrapper.querySelector('nav');
 const off = document.querySelector('.offerings');
 const main = document.querySelector('.main-grid');
 const dailyColor = document.querySelector('.daily-color');
-const label = dailyColor.querySelector('label');
-const today = label.querySelector('#today');
-const btn = dailyColor.querySelector('#button');
 const color = document.querySelector('.color');
 const bday = document.querySelector('#birthday');
 const code = document.querySelector('#code');
 const mantra = document.querySelector('.daily-mantra');
-const codeBtn = document.querySelector('#code-submit');
 const emailSubmit = document.querySelector('#email-submit');
 const birthdayReg = document.querySelector('#birthdayReg');
 const name = document.querySelector('#name');
 const email = document.querySelector('#email');
+const codeSubmit = document.querySelector('#code-submit');
+document.addEventListener('DOMContentLoaded', function(){
+    const colorMantraButton = document.querySelector('#color-mantra-btn');
+    if(colorMantraButton){
+        colorMantraButton.addEventListener('click', mantraPage);
+        function mantraPage(){
+            location.assign('https://www.lets-heal.com/tools/color-tool.html');
+        }
+
+    }
+});
+const newsLetterPopup = document.querySelector('.news-popup');
+const newsButton = document.querySelector('.newsletter');
 
 
 let codeArray = ['746374', '948374', '930384', '991711', '938373','99843','988444', '017151', '243794', '726222', '009909'];
@@ -115,7 +125,7 @@ function randomizer() {
     if(bday.value !== ""){
         var r1 = Math.floor(Math.random() *(999999 - 100000)) + 100000;
     color.style.background = "#" + r1;
-    color.scrollIntoView();
+    window.scrollTo(0,0);
     }else{
         return;
     }
@@ -125,7 +135,9 @@ function randomizer() {
 function randomizer2() {
         var r1 = Math.floor(Math.random() *(999999 - 100000)) + 100000;
     color.style.background = "#" + r1;
-    color.scrollIntoView();
+    if((typeof window.orientation !== "undefined") || (navigator.userAgent.indexOf('IEMobile') !== -1)){
+        window.scrollTo(0,0);
+    }
 }
 function checkForm(form){
     form.subBtn.disabled = true;
@@ -140,18 +152,27 @@ function mantraPicker(){
     randomizer2();
 }
 function codeCheck(){
-    if(codeArray.includes(code.value)){
-        mantra.style.display = 'flex';
-        mantraPicker();
+    mantra.style.display = 'flex';
+    mantraPicker();
 
-    }else{
-        alert('Please enter your email to receive a valid code. If you have and this is an error, please contact our support team.');
+    
+}
+
+function signUp(){
+    if(newsLetterPopup.style.display !== 'flex'){
+        newsLetterPopup.style.display = 'flex';
+    }else if(newsLetterPopup.style.display === 'flex'){
+        newsLetterPopup.style.display = 'none';
     }
 }
-today.innerHTML = currentDate;
+function goHome(){
+    location.assign('https://www.lets-heal.com/');
+}
+// today.innerHTML = currentDate;
 
+logo.addEventListener('click', goHome);
 hamMenu.addEventListener('click', openMenu);
 off.addEventListener('click', offMenu);
-btn.addEventListener('click', randomizer);
-codeBtn.addEventListener('click', codeCheck);
-// emailSubmit.addEventListener('click', randomizer2 )
+// btn.addEventListener('click', randomizer);
+newsButton.addEventListener('click', signUp);
+codeSubmit.addEventListener('click', codeCheck);

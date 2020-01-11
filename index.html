@@ -28,9 +28,10 @@
     <link rel="canonical" href="https://www.lets-heal.com/">
 </head>
 <body>
-    <div class="nav-wrapper">
+    <div class="nav-wrapper sticky">
         <div class="logo">LET'S<br>HEAL</div>
         <div class="desk-logo">LET'S HEAL</div>
+        <div class="newsletter">Newsletter</div>
         <div class="hamburger"></div>
         <nav>
             <ul>
@@ -40,17 +41,20 @@
                 <a id="rituals" href="#_"><li>Rituals</li></a>
             </ul>
         </nav>
-        <div class="desk-nav">
-            <ul>
-                <li><a href="#_">Teas</a></li>
-                <li><a href="#_">Zodiac</a></li>
-                <li><a href="#_">Rituals</a></li>
-                <li><a href="#_">Meditation</a></li>
-                <li><a href="#_">Books</a></li>
-                <li><a href="#_">Resources</a></li>
-            </ul>
-        </div>
     </div>
+            <div class="desk-nav static">
+                <ul>
+                    <li style="border-bottom: 2px solid #FFAB73;" ><a href="#_" >Home</a></li>
+                    <li><a href="#_" title="Go here for our helpful tools">Tools</a></li>
+                    <!-- <li><a href="#_">Rituals</a></li> -->
+                    <!-- <li><a href="#_">Meditation</a></li> -->
+                    <!-- <li><a href="#_">Books</a></li> -->
+                    <!-- <li><a href="#_">Resources</a></li> -->
+                </ul>
+            </div>
+            <div class="mod">
+                <em>Daily Mantra: </em><i><div class="dm">I imagine the best possible version of me, and I release any part of me that doesn’t believe in it</div></i>
+            </div>
     <div class="main-grid-box">
         <main>
             <hr class="hr3">
@@ -75,55 +79,36 @@
             <hr class="hr4">
         </main>
         <div class="title">
-            <h2>Begin the Healing</h2>
-       </div>
-        <div class="heal-btn"><a href="#"> HEAL</a></div>
-        <div class="daily">
-            <h2>Daily Offering</h2>
-            <img src="/img/statue.jpg" alt="statue">
-        </div>
-        <div class="daily-color">
-            <h2>Free Daily Color and Mantra Intention Tool</h2>
-            <p>There are signs all around us guiding us along our path if you know where to look.</p><br>
-            <p>One simple tool is setting an intention to a color paired with a mantra and following that color when you encounter it out in the world.</p><br>
-            <p>The mantra will help guide you along your color path.</p><br>
-            <p>Register to user our Free Daily Color and Mantra Intention Tool</p><br>
-            <p>You'll receive a code in your email that you can use daily for your personal color and mantra.</p><br>
-            <!-- registration  -->
-            <div class="mantra">
-                
-                
-                <form name="mantra-email" action="/success/" method="POST" data-netlify="true">
-                    <input type="date" name="Birth Date" id="birthdayReg" placeholder="birthdate" required><br>
-                    <input type="text" name="Name" id="name" placeholder="name" required>
-                    <input type="email" name="Email" id="email" placeholder="email" required>
-                    <input type="submit" value="SUBMIT" id="email-submit">
-                </form>
-                    <p id="personal-code">If you already have your personal code enter it here:</p>
-                <form action="javascript:void(0);" onsubmit="return checkForm2(this)">
-                    <input type="text" name="code" id="code" placeholder="personal code">
-                    <input type="submit" value="SUBMIT" id="code-submit" name="codeSubmit" href="#button">
-                </form><br>
+            <h2>Welcome to Your Best Self</h2>
+            <img src="/img/healing.jpg" alt="healing">
+            <div class="card-grid">
+                <div class="card-content">
+                    <h3>It's been a rough couple of years hasn't it?</h3>
+                    <p>We've created this site because we were in need of some guidance but the options were overwhelming and we wanted someone or something to just point us in the right direction!</p>
+                    <p>We all need direction and motivation from time to time because there are so many choices and paths and obstacles in life.</p>
+                    <p>So many in fact that you wind up paralyzed from the options and do nothing at all.</p>
+                    <p>We're here to help.</p>
+                </div>
+                <div class="latest">
+                    <div class="card">
+
+                        <h3>Start Here</h3>
+                        <p>Check out our Daily Color and Mantra Intention Tool</p>
+                        <input type="button" value="" id="color-mantra-btn">
+                    </div>
+                </div>
             </div>
-            <p style="text-align: center;">Or</p><br>
-            <p>If you'd prefer not to register you can still use our free color tool without the mantra by entering just your Birth Date</p><br>
-            <form action="javascript:void(0);" onsubmit="return checkForm(this);">
-                <label>Enter your birth-date to receive your color for <span id="today"></span></label><br>
-                <h6>(We do not save this data)</h6><br>
-                <label for="birthday" style="text-align: center;">Birth Date</label><input type="date" name="color" id="birthday" required><br>
-                
-                <input type="submit" value="SUBMIT" id="button" name="subBtn">
-            </form>
-            <br>
-            <div class="color" >
-                <div class="daily-mantra">Open The Door</div>
-            </div>
-            <div class="message"><p>We recommend taking a screenshot of the color and mantra to take with you so you can keep this in your mind throughout your day in order to get the full effect of following your path.</p></div>
-            <br>
             
-        </div> 
+       </div>
+        
     </div>
-    
+    <div class="news-popup">
+        <h3>Join the Let's Heal Newsletter</h3>
+        <form name="newsletter" action="/success/" method="POST" data-netlify="true">
+            <input type="email" name="Email" id="email" placeholder="email" required>
+            <input type="submit" value="SUBMIT" id="email-submit">
+        </form>
+    </div>
     <footer>
         <div class="foot1">
             <img src="/img/footer-logo.png" alt="footer">
@@ -138,6 +123,7 @@
                 <li><a href="#_">lets-heal.com 2020</a></li>
             </ul>
         </div>
+
     </footer>
     <script src="/js/script.js"></script>
 </body>
