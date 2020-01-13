@@ -259,7 +259,7 @@ main{
     display: grid;
     grid-template-columns: 1fr;
     margin: 1em;
-    background: #FFAB73;
+    background: linear-gradient(180deg, #ffab73, 10%, #fff);
     border-radius: 12px;
     padding: 1em;
     grid-column: 2/4;
