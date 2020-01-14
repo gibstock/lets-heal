@@ -413,6 +413,13 @@ footer{
     top: 10vh;
     z-index: 98;
 }
+.articles{
+    padding: 1em;
+}
+.articles a{
+    text-decoration: none;
+    color: #000;
+}
 .card{
     display: flex;
     flex-direction: column;
