@@ -111,6 +111,7 @@ let currentDate = `${month}/${day}/${year}`;
 
 function openMenu(){
     if(nav.style.opacity === '0' || nav.style.opacity === ''){
+        nav.style.transform = 'translateY(0)';
         nav.style.zIndex = '99';
         nav.style.transitionDelay = '';
         nav.style.opacity = '1';
@@ -130,6 +131,7 @@ function openMenu(){
         nav.style.opacity = '0';
         nav.style.zIndex = '-99';
         nav.style.display = 'none';
+        nav.style.transform = 'translateY(-100vh)';
     }
 }
 function offMenu(){
