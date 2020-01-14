@@ -72,25 +72,39 @@ img{
     position: relative;
     width: 30%;
     height: 7px;
-    background: #000;
-    justify-self: flex-end;
+    background: #555;
+    justify-self: center;
     align-self: center;
     margin: 1em;
-    display: none;
+    transform: rotateZ(90deg);
+    border-radius: 12px;
+    grid-column: 2/4;
+    /* display: none; */
 }
-.hamburger::before,
+.hamburger::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 7px;
+    background: #999;
+    border-radius: 12px;
+}
 .hamburger::after{
     content: '';
     position: absolute;
     width: 100%;
     height: 7px;
     background: #000;
+    border-radius: 12px;
 }
 .hamburger::before{
-    transform: translateY(-15px);
+    transform: rotateZ(45deg) translateY(-15px);
 }
 .hamburger::after{
-    transform: translateY(15px);
+    transform: rotateZ(-45deg) translateY(15px);
+}
+.main-grid-box{
+    transition: all 1s;
 }
 .nav-wrapper > nav > ul{
     height: 100%;
@@ -115,10 +129,10 @@ nav{
     position: absolute;
     width: 100%;
     height: 50vh;
-    display: none;
+    /* display: none; */
     top: 15vh;
     opacity: 0;
-    transition: opacity .5s;
+    transition: opacity 1s;
     z-index: 99;
 }
 .newsletter{
@@ -129,18 +143,24 @@ nav{
     color: #000;
 
 }
-#exercises{
+#home{
     background: #A38068;
 }
-#teas{
+#articles{
     background: #FFAB73;
+    transform: translateY(-100%);
+    transition:  all 2s;
+    
 }
 #meditation{
     background: #F09355;
+    transform: translateY(-200%);
+    transition: all 2s;
 }
-#rituals{
+/* #rituals{
     background: #67A0A3;
-}
+    transform: translateY(-300%);
+} */
 main{
     margin: 1em;
     grid-column: 2/4;

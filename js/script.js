@@ -3,8 +3,12 @@ const logo = document.querySelector('.logo');
 const hamMenu = document.querySelector('.hamburger');
 const navWrapper = document.querySelector('.nav-wrapper');
 const nav = navWrapper.querySelector('nav');
+const home = nav.querySelector('#home');
+const articles = nav.querySelector('#articles');
+const meditation = nav.querySelector('#meditation');
 const off = document.querySelector('.offerings');
 const main = document.querySelector('.main-grid');
+
 const dailyColor = document.querySelector('.daily-color');
 const color = document.querySelector('.color');
 const bday = document.querySelector('#birthday');
@@ -15,6 +19,7 @@ const birthdayReg = document.querySelector('#birthdayReg');
 const name = document.querySelector('#name');
 const email = document.querySelector('#email');
 const codeSubmit = document.querySelector('#code-submit');
+
 document.addEventListener('DOMContentLoaded', function(){
     const colorMantraButton = document.querySelector('#color-mantra-btn');
     if(colorMantraButton){
@@ -103,12 +108,23 @@ let day = date.getDate();
 let year = date.getFullYear();
 let currentDate = `${month}/${day}/${year}`;
 
+
 function openMenu(){
-    if(nav.style.display === '' || nav.style.display === 'none'){
-        nav.style.display = 'inherit';
+    if(nav.style.opacity === '0' || nav.style.opacity === ''){
+        nav.style.transitionDelay = '';
         nav.style.opacity = '1';
-    }else if(nav.style.display === 'inherit'){
-        nav.style.display = 'none';
+        meditation.style.transform = 'translateY(0)';
+        articles.style.transform = 'translateY(0)';
+        const mainGridBox = document.querySelector('.main-grid-box');
+        mainGridBox.style.marginTop = '50vh';
+        mainGridBox.style.transitionDelay = '';
+    }else if(nav.style.opacity === '1'){
+        const mainGridBox = document.querySelector('.main-grid-box');
+        mainGridBox.style.marginTop = '0';
+        mainGridBox.style.transitionDelay = '1s';
+        meditation.style.transform = 'translateY(-200%)';
+        articles.style.transform = 'translateY(-100%)';
+        nav.style.transitionDelay = '1s';
         nav.style.opacity = '0';
     }
 }
