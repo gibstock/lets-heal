@@ -114,6 +114,7 @@ function openMenu(){
         nav.style.zIndex = '99';
         nav.style.transitionDelay = '';
         nav.style.opacity = '1';
+        nav.style.display = 'inherit';
         meditation.style.transform = 'translateY(0)';
         articles.style.transform = 'translateY(0)';
         const mainGridBox = document.querySelector('.main-grid-box');
@@ -127,7 +128,8 @@ function openMenu(){
         articles.style.transform = 'translateY(-100%)';
         nav.style.transitionDelay = '1s';
         nav.style.opacity = '0';
-        nav.style.zIndex = '-1';
+        nav.style.zIndex = '-99';
+        nav.style.display = 'none';
     }
 }
 function offMenu(){
