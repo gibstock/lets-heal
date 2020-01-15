@@ -180,7 +180,7 @@ function randomizer2() {
         var r1 = Math.floor(Math.random() *(999999 - 100000)) + 100000;
     color.style.background = "#" + r1;
     if((typeof window.orientation !== "undefined") || (navigator.userAgent.indexOf('IEMobile') !== -1)){
-        window.scrollTo(0,0);
+        window.scrollTo(0,800);
     }
 }
 function checkForm(form){

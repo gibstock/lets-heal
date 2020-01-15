@@ -5,7 +5,7 @@ const navWrapper = document.querySelector('.nav-wrapper');
 const nav = navWrapper.querySelector('nav');
 const home = nav.querySelector('#home');
 const articles = nav.querySelector('#articles');
-const meditation = nav.querySelector('#meditation');
+const tools = nav.querySelector('#tools');
 const off = document.querySelector('.offerings');
 const main = document.querySelector('.main-grid');
 
@@ -20,7 +20,9 @@ const name = document.querySelector('#name');
 const email = document.querySelector('#email');
 const codeSubmit = document.querySelector('#code-submit');
 const colorList = document.querySelector('.colorList');
+const colorListMobile = document.querySelector('.colorListMobile');
 const input = colorList.querySelectorAll('input');
+const inputMobile = colorListMobile.querySelectorAll('input');
 
 function checkTest(){
     input.forEach((choice) =>{
@@ -36,7 +38,28 @@ function checkTest(){
     })
     
 };
+function checkTestMobile(){
+    console.log(inputMobile);
+    inputMobile.forEach((choice) =>{
+        if(choice.checked === true){
+            console.log(choice, 'checked');
+            let x = document.querySelector('.' + choice.id);
+            console.log(x);
+            x.style.visibility = 'visible';
+            x.style.background = '#fff';
+            colorListMobile.style.background = choice.id;
+            disabledMobile();
+        }
+    })
     
+};
+    
+function disabledMobile(){
+    // disable buttons 
+    inputMobile.forEach((choice) =>{
+        choice.disabled = true;
+    })
+}
 function disabled(){
     // disable buttons 
     input.forEach((choice) =>{
@@ -141,7 +164,7 @@ function openMenu(){
         nav.style.transitionDelay = '';
         nav.style.opacity = '1';
         // nav.style.display = 'inherit';
-        meditation.style.transform = 'translateY(0)';
+        tools.style.transform = 'translateY(0)';
         articles.style.transform = 'translateY(0)';
         const mainGridBox = document.querySelector('.main-grid-box');
         mainGridBox.style.marginTop = '50vh';
@@ -150,7 +173,7 @@ function openMenu(){
         const mainGridBox = document.querySelector('.main-grid-box');
         mainGridBox.style.marginTop = '0';
         mainGridBox.style.transitionDelay = '1s';
-        meditation.style.transform = 'translateY(-200%)';
+        tools.style.transform = 'translateY(-200%)';
         articles.style.transform = 'translateY(-100%)';
         nav.style.transitionDelay = '1s';
         nav.style.opacity = '0';

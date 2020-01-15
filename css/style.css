@@ -493,8 +493,8 @@ footer{
     width: 100%; 
     /* height: 315px; */
 }
-
-#colorDecipherBtn{
+#colorDecipherBtn,
+#colorDecipherBtnMobile{
     border-radius: 12px;
     border: none;
     margin: 1em;
@@ -506,7 +506,8 @@ footer{
     left: 50%;
     transform: translateX(-50%);
 }
-.colorList{
+.colorList,
+.colorListMobile{
     padding: .5em;
     display: grid;
     grid-template-columns: 2fr 7fr;
@@ -516,13 +517,15 @@ footer{
     box-shadow: inset -3px -3px 10px #000, inset
     3px 3px 8px #fff;
 }
-.colorList input{
+.colorList input,
+.colorListMobile input{
     padding: 1em;
     align-self: center;
     justify-self: center;
     display: none;
 }
-.colorList label{
+.colorList label,
+.colorListMobile label{
     font-size: 24px;
     color: #fff;
     text-align: center;
@@ -688,6 +691,16 @@ input[type="checkbox"]:checked + label{
         margin: 0 2em 0 2em;
         padding: 1em;
     }
+    .colorList{
+        padding: .5em;
+        display: grid;
+        grid-template-columns: 2fr 7fr;
+        gap: 1em;
+        /* grid-template-rows: 50px; */
+        border-radius: 12px;
+        box-shadow: inset -3px -3px 10px #000, inset
+        3px 3px 8px #fff;
+    }
     .bg{
         background: linear-gradient(180deg, #ffab73, 10%, #fff);
 
@@ -765,6 +778,18 @@ input[type="checkbox"]:checked + label{
         background: #fff;
         margin: .2em;
 
+    }
+    #colorDecipherBtn{
+        border-radius: 12px;
+        border: none;
+        margin: 1em;
+        padding: 1em;
+        width: 50%;
+        background: #ffab73;
+        position: sticky;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
     }
     .hamburger{
         display: none;
@@ -930,11 +955,7 @@ input[type="checkbox"]:checked + label{
     .foot1 img{
         width: 10%;
     }
-    .colorList{
-        display: grid;
-        grid-template-columns: 2fr 7fr;
-        border-radius: 12px;
-    }
+    
     .colorList input{
 
         align-self: center;
