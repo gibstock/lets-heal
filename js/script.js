@@ -5,7 +5,7 @@ const navWrapper = document.querySelector('.nav-wrapper');
 const nav = navWrapper.querySelector('nav');
 const home = nav.querySelector('#home');
 const articles = nav.querySelector('#articles');
-const meditation = nav.querySelector('#meditation');
+const tools = nav.querySelector('#tools');
 const off = document.querySelector('.offerings');
 const main = document.querySelector('.main-grid');
 
@@ -138,7 +138,7 @@ function openMenu(){
         nav.style.transitionDelay = '';
         nav.style.opacity = '1';
         // nav.style.display = 'inherit';
-        meditation.style.transform = 'translateY(0)';
+        tools.style.transform = 'translateY(0)';
         articles.style.transform = 'translateY(0)';
         const mainGridBox = document.querySelector('.main-grid-box');
         mainGridBox.style.marginTop = '50vh';
@@ -147,7 +147,7 @@ function openMenu(){
         const mainGridBox = document.querySelector('.main-grid-box');
         mainGridBox.style.marginTop = '0';
         mainGridBox.style.transitionDelay = '1s';
-        meditation.style.transform = 'translateY(-200%)';
+        tools.style.transform = 'translateY(-200%)';
         articles.style.transform = 'translateY(-100%)';
         nav.style.transitionDelay = '1s';
         nav.style.opacity = '0';
