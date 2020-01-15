@@ -20,26 +20,27 @@ const name = document.querySelector('#name');
 const email = document.querySelector('#email');
 const codeSubmit = document.querySelector('#code-submit');
 const colorList = document.querySelector('.colorList');
-document.addEventListener('DOMContentLoaded', function(){
-    const input = colorList.querySelectorAll('input');
-    if(input){
-        function checkTest(){
-            input.forEach((choice) =>{
-                if(choice.checked === true){
-                    let x = document.querySelector('.' + choice.id);
-                    x.style.visibility = 'visible';
-                    x.style.background = '#fff';
-                    colorList.style.background = choice.id;
-                    // disable buttons 
-                        input.forEach((choice) =>{
-                            choice.disabled = true;
-                        })
-                }
-            })
-            
-        };
-    }
-})
+
+const input = colorList.querySelectorAll('input');
+
+function checkTest(){
+    input.forEach((choice) =>{
+        if(choice.checked === true){
+            console.log('checked');
+            let x = document.querySelector('.' + choice.id);
+            x.style.visibility = 'visible';
+            x.style.background = '#fff';
+            colorList.style.background = choice.id;
+            // disable buttons 
+                input.forEach((choice) =>{
+                    choice.disabled = true;
+                })
+        }
+    })
+    
+};
+    
+
 
 document.addEventListener('DOMContentLoaded', function(){
     const colorMantraButton = document.querySelector('#color-mantra-btn');
@@ -222,4 +223,4 @@ hamMenu.addEventListener('click', openMenu);
 off.addEventListener('click', offMenu);
 // btn.addEventListener('click', randomizer);
 newsButton.addEventListener('click', signUp);
-codeSubmit.addEventListener('click', codeCheck);
+// codeSubmit.addEventListener('click', codeCheck);
