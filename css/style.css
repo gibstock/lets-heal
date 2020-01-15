@@ -76,7 +76,7 @@ img{
     justify-self: center;
     align-self: center;
     margin: 1em;
-    transform: rotateZ(90deg);
+    transform: ;
     border-radius: 12px;
     grid-column: 2/4;
     /* display: none; */
@@ -98,10 +98,20 @@ img{
     border-radius: 12px;
 }
 .hamburger::before{
-    transform: rotateZ(45deg) translateY(-15px);
+    transform: translateY(-15px);
 }
 .hamburger::after{
-    transform: rotateZ(-45deg) translateY(15px);
+    transform:  translateY(15px);
+}
+.hamburger:hover .hamburger::before,
+.hamburger:active .hamburger::before,
+.hamburger:focus .hamburger::before{
+    transform: rotateZ(-45deg);
+}
+.hamburger:hover .hamburger::after,
+.hamburger:active .hamburger::after,
+.hamburger:focus .hamburger::after{
+    transform: rotateZ(45deg);
 }
 .main-grid-box{
     transition: all 1s;
