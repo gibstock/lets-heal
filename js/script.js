@@ -19,6 +19,8 @@ const birthdayReg = document.querySelector('#birthdayReg');
 const name = document.querySelector('#name');
 const email = document.querySelector('#email');
 const codeSubmit = document.querySelector('#code-submit');
+const colorList = document.querySelector('.colorList');
+const input = colorList.querySelectorAll('input');
 
 document.addEventListener('DOMContentLoaded', function(){
     const colorMantraButton = document.querySelector('#color-mantra-btn');
@@ -191,6 +193,24 @@ function signUp(){
 function goHome(){
     location.assign('https://www.lets-heal.com/');
 }
+function disabledInput(){
+    input.forEach((choice) =>{
+        choice.disabled = true;
+    })
+}
+function checkTest(){
+    input.forEach((choice) =>{
+        if(choice.checked === true){
+            let x = document.querySelector('.' + choice.id);
+            x.style.visibility = 'visible';
+            x.style.background = '#fff';
+            colorList.style.background = choice.id;
+            
+           disabledInput();
+        }
+    })
+    
+};
 // today.innerHTML = currentDate;
 
 logo.addEventListener('click', goHome);
