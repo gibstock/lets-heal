@@ -6,18 +6,37 @@
 body{
     font-family: 'Baskervville', serif;
 }
-p{
+p,li{
     font-family: 'ABeeZee', sans-serif;
     margin-bottom: 10px;
 }
-h3,h2{
+h2{
     font-size: 36px;
+}
+h3{
+    font-size: 28px;
+}
+h4{
+    font-size: 24px;
+    font-weight: 400;
 }
 p{
     font-size: 15px;
 }
 i{
     font-size: 16px;
+}
+
+
+#altar{
+    padding: 1em;
+}
+#altar li{
+    list-style-type: upper-roman;
+}
+#encant li{
+    margin-left: 33%;
+    list-style: none;
 }
 img{
     max-width: 100%;
@@ -205,6 +224,9 @@ main{
 }
 .card-content p{
     margin-top: 1em;
+}
+.card-content ul li{
+    font-size: 15px;
 }
 .heal-btn{
     display: none;
@@ -884,7 +906,7 @@ input[type="checkbox"]:checked + label{
     }
     .card-content h3{
         color: #333;
-        font-size: .65em;
+        font-size: .55em;
         padding-bottom: .14em;
         margin-top: .55em;
         margin-bottom: .55em;
