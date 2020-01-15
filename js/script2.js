@@ -20,9 +20,9 @@ const name = document.querySelector('#name');
 const email = document.querySelector('#email');
 const codeSubmit = document.querySelector('#code-submit');
 const colorList = document.querySelector('.colorList');
-const colorListMobile = document.querySelector('.colorListMobile');
+// const colorListMobile = document.querySelector('.colorListMobile');
 const input = colorList.querySelectorAll('input');
-const inputMobile = colorListMobile.querySelectorAll('input');
+// const inputMobile = colorListMobile.querySelectorAll('input');
 
 function checkTest(){
     input.forEach((choice) =>{
@@ -38,21 +38,21 @@ function checkTest(){
     })
     
 };
-function checkTestMobile(){
-    console.log(inputMobile);
-    inputMobile.forEach((choice) =>{
-        if(choice.checked === true){
-            console.log(choice, 'checked');
-            let x = document.querySelector('.' + choice.id);
-            console.log(x);
-            x.style.visibility = 'visible';
-            x.style.background = '#fff';
-            colorListMobile.style.background = choice.id;
-            disabledMobile();
-        }
-    })
+// function checkTestMobile(){
+//     console.log(inputMobile);
+//     inputMobile.forEach((choice) =>{
+//         if(choice.checked === true){
+//             console.log(choice, 'checked');
+//             let x = document.querySelector('.' + choice.id);
+//             console.log(x);
+//             x.style.visibility = 'visible';
+//             x.style.background = '#fff';
+//             colorListMobile.style.background = choice.id;
+//             disabledMobile();
+//         }
+//     })
     
-};
+// };
     
 function disabledMobile(){
     // disable buttons 
